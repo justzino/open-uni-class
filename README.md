@@ -1,5 +1,7 @@
-### 매번 수업 들어가기 귀찮아서 만든 수업 들어가기 자동화 프로그램
+## 매번 수업 들어가기 귀찮아서 대충 만든 수업 들어가기 자동화
 
+
+### 사전 작업
 1. [크롬 드라이버 버전 확인](chrome://settings/help)
 2. [크롬 버전에 맞는 드라이버 다운로드](https://chromedriver.chromium.org/downloads)
 
