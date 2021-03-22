@@ -4,7 +4,7 @@
 2. [크롬 버전에 맞는 드라이버 다운로드](https://chromedriver.chromium.org/downloads)
 
 ### 실행
-1. 가상환경 설정
+1. 가상환경 설정 : `python -m venv [가상환경 이름]` -> activate
 2. 패키지 설치 : `pip install -r requirements.txt` 실행
 3. 클래스 입력
     ```python
