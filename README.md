@@ -22,3 +22,5 @@
     class_wed = [[], []]        # 수요일 수업
     ```
 4. `python openclass.py` 실행
+
+5. exe 파일 생성 `pyinstaller --onefile --add-binary "chromedriver.exe;." openclass.py`
