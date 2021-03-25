@@ -2,16 +2,22 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 from datetime import datetime
+import sys
+import os
 
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 
-# webdriver 설정 (chrome) - Headless 모드
-# browser = webdriver.Chrome('chromedriver.exe', options=chrome_options)
+if getattr(sys, 'frozen', False):
+    chromedriver_path = os.path.join(sys._MEIPASS, "chromedriver.exe")
+    # webdriver 설정 (chrome) - Headless 모드
+    # browser = webdriver.Chrome(chromedriver_path, options=chrome_options)
 
-# webdriver 설정 (chrome) - 일반 모드
-browser = webdriver.Chrome('chromedriver.exe')
+    # webdriver 설정 (chrome) - 일반 모드
+    browser = webdriver.Chrome(chromedriver_path)
+else:
+    browser = webdriver.Chrome()
 
 # 크롬 브러우저 내부 대기
 browser.implicitly_wait(1)
