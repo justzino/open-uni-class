@@ -37,7 +37,7 @@ class_fri = [[], []]
 # 수업 입장 (요일별 수업 변수 입력)
 def enter_class(class_week):
     for cls in class_week:
-        if time_now.hour <= cls[1] or cls[1] < time_now.hour < cls[1] + cls[2]:
+        if cls[1]*60 - 20 <= time_now.hour*60 + time_now.minute <= (cls[1] + cls[2])*60 - 20:
             # 페이지 이동
             browser.get(cls[0])
 
